@@ -26,7 +26,7 @@ function createApp(opts = {}) {
 	const options = merge(_opts, opts)
 	const app = new Koa()
 	app
-		.use(errorHandler(options.errorHandler.emit))
+		.use(errorHandler(options.errorHandler))
 		.use(compress(options.compress))
 		.use(helmet(options.helmet))
 		.use(koaCors(options.koaCors))
