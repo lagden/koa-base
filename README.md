@@ -44,7 +44,6 @@ Parameter    | Package
 -----------  | --------------------
 errorHandler | [@tadashi/koa-error](https://github.com/lagden/koa-error)
 compress     | [koa-compress](https://github.com/koajs/compress)
-helmet       | [koa-helmet](https://github.com/venables/koa-helmet)
 koaCors      | [kcors](https://github.com/koajs/cors)
 
 

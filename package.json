@@ -1,7 +1,11 @@
 {
   "name": "koa-app-base",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A web server with sugar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lagden/koa-app-base.git"
+  },
   "main": "index.js",
   "files": [
     "LICENSE",
@@ -23,7 +27,7 @@
   "devDependencies": {
     "ava": "0.22.0",
     "hash-to-port": "1.0.0",
-    "nyc": "11.1.0",
+    "nyc": "11.2.1",
     "supertest": "3.0.0",
     "xo": "0.18.2"
   },
@@ -34,7 +38,6 @@
     "koa-compress": "2.0.0",
     "koa-conditional-get": "2.0.0",
     "koa-etag": "3.0.0",
-    "koa-helmet": "3.2.0",
     "lodash.merge": "4.6.0"
   },
   "xo": {

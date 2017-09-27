@@ -7,7 +7,6 @@ const Koa = require('koa')
 const koaCors = require('kcors')
 const conditional = require('koa-conditional-get')
 const etag = require('koa-etag')
-const helmet = require('koa-helmet')
 const errorHandler = require('@tadashi/koa-error')
 
 // Middleware options
@@ -19,7 +18,6 @@ _opts.compress = {
 	threshold: 2048,
 	flush: zlib.Z_SYNC_FLUSH
 }
-_opts.helmet = {noCache: true}
 _opts.koaCors = {}
 
 function createApp(opts = {}) {
@@ -28,7 +26,6 @@ function createApp(opts = {}) {
 	app
 		.use(errorHandler(options.errorHandler))
 		.use(compress(options.compress))
-		.use(helmet(options.helmet))
 		.use(koaCors(options.koaCors))
 		.use(conditional())
 		.use(etag())
