@@ -10,10 +10,8 @@
 [![Greenkeeper badge][greenkeeper-img]][greenkeeper]
 
 
-[greenkeeper-img]: https://badges.greenkeeper.io/lagden/koa-app-base.svg
-[greenkeeper]:     https://greenkeeper.io/
-[npm-img]:         https://img.shields.io/npm/v/lagden-koa-app-base.svg
-[npm]:             https://www.npmjs.com/package/lagden-koa-app-base
+[npm-img]:         https://img.shields.io/npm/v/koa-app-base.svg
+[npm]:             https://www.npmjs.com/package/koa-app-base
 [ci-img]:          https://travis-ci.org/lagden/koa-app-base.svg
 [ci]:              https://travis-ci.org/lagden/koa-app-base
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/koa-app-base/badge.svg?branch=master
@@ -24,6 +22,9 @@
 [devDep]:          https://david-dm.org/lagden/koa-app-base#info=devDependencies
 [xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:              https://github.com/sindresorhus/xo
+[greenkeeper-img]: https://badges.greenkeeper.io/lagden/koa-app-base.svg
+[greenkeeper]:     https://greenkeeper.io/
+
 
 Setup base para fazer um web server utilizando [Koa](https://github.com/koajs/koa)
 
