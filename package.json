@@ -29,12 +29,12 @@
     "ava": "0.22.0",
     "coveralls": "3.0.0",
     "hash-to-port": "1.0.0",
-    "nyc": "11.2.1",
+    "nyc": "11.3.0",
     "supertest": "3.0.0",
     "xo": "0.18.2"
   },
   "dependencies": {
-    "@tadashi/koa-error": "2.0.1",
+    "@tadashi/koa-error": "2.1.0",
     "kcors": "2.2.1",
     "koa": "2.4.1",
     "koa-compress": "2.0.0",
