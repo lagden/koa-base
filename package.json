@@ -1,6 +1,6 @@
 {
   "name": "koa-app-base",
-  "version": "1.1.2",
+  "version": "1.1.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
     "README.md"
   ],
   "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "pretest": "xo",
     "test": "nyc ava"
   },
@@ -26,6 +27,7 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "0.22.0",
+    "coveralls": "3.0.0",
     "hash-to-port": "1.0.0",
     "nyc": "11.2.1",
     "supertest": "3.0.0",
