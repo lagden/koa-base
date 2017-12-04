@@ -1,6 +1,6 @@
 {
   "name": "koa-app-base",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
@@ -25,25 +25,8 @@
   ],
   "author": "Thiago Lagden",
   "license": "MIT",
-  "devDependencies": {
-    "ava": "0.24.0",
-    "coveralls": "3.0.0",
-    "hash-to-port": "1.0.0",
-    "nyc": "11.3.0",
-    "supertest": "3.0.0",
-    "xo": "0.18.2"
-  },
-  "dependencies": {
-    "@tadashi/koa-error": "2.1.0",
-    "kcors": "2.2.1",
-    "koa": "2.4.1",
-    "koa-compress": "2.0.0",
-    "koa-conditional-get": "2.0.0",
-    "koa-etag": "3.0.0",
-    "lodash.merge": "4.6.0"
-  },
   "engines": {
-    "node": ">= 8.1.4"
+    "node": ">= 8.9.1"
   },
   "xo": {
     "envs": [
@@ -59,5 +42,22 @@
       ],
       "capitalized-comments": 0
     }
+  },
+  "dependencies": {
+    "@tadashi/koa-error": "3.0.0",
+    "kcors": "2.2.1",
+    "koa": "2.4.1",
+    "koa-compress": "2.0.0",
+    "koa-conditional-get": "2.0.0",
+    "koa-etag": "3.0.0",
+    "lodash.merge": "4.6.0"
+  },
+  "devDependencies": {
+    "ava": "0.24.0",
+    "coveralls": "3.0.0",
+    "hash-to-port": "1.0.0",
+    "nyc": "11.3.0",
+    "supertest": "3.0.0",
+    "xo": "0.18.2"
   }
 }

@@ -62,9 +62,9 @@ Veja as opções no próprio pacote
 
 Parameter    | Package
 -----------  | --------------------
-errorHandler | [@tadashi/koa-error](https://github.com/lagden/koa-error)
+error        | [@tadashi/koa-error](https://github.com/lagden/koa-error)
 compress     | [koa-compress](https://github.com/koajs/compress)
-koaCors      | [kcors](https://github.com/koajs/cors)
+cors         | [kcors](https://github.com/koajs/cors)
 
 
 ## License

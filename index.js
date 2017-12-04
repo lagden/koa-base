@@ -12,21 +12,21 @@ const errorHandler = require('@tadashi/koa-error')
 // Middleware options
 const _opts = Object.create(null)
 
-_opts.errorHandler = {emit: false}
+_opts.error = {emit: false}
 _opts.compress = {
 	filter: contentType => /text|xml|json|javascript/ig.test(contentType),
 	threshold: 2048,
 	flush: zlib.Z_SYNC_FLUSH
 }
-_opts.koaCors = {}
+_opts.cors = {}
 
 function createApp(opts = {}) {
 	const options = merge(_opts, opts)
 	const app = new Koa()
 	app
-		.use(errorHandler(options.errorHandler))
+		.use(errorHandler(options.error))
 		.use(compress(options.compress))
-		.use(koaCors(options.koaCors))
+		.use(koaCors(options.cors))
 		.use(conditional())
 		.use(etag())
 

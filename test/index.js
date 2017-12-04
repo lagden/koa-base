@@ -12,7 +12,8 @@ const koa = base()
 		}
 	})
 
-const app = request.agent(koa.listen(toPort(Math.random())))
+const hash = (Number(String(Math.random()).split('.')[1]) + Date.now()).toString(26)
+const app = request.agent(koa.listen(toPort(hash)))
 
 test('ok', async t => {
 	const res = await app.get('/')
