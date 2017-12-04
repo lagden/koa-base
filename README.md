@@ -16,10 +16,10 @@
 [ci]:              https://travis-ci.org/lagden/koa-app-base
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/koa-app-base/badge.svg?branch=master
 [coveralls]:       https://coveralls.io/github/lagden/koa-app-base?branch=master
-[dep-img]:         https://david-dm.org/lagden/koa-app-base.svg
+[dep-img]:         https://david-dm.org/lagden/koa-app-base/status.svg
 [dep]:             https://david-dm.org/lagden/koa-app-base
 [devDep-img]:      https://david-dm.org/lagden/koa-app-base/dev-status.svg
-[devDep]:          https://david-dm.org/lagden/koa-app-base#info=devDependencies
+[devDep]:          https://david-dm.org/lagden/koa-app-base?type=dev
 [xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:              https://github.com/sindresorhus/xo
 [greenkeeper-img]: https://badges.greenkeeper.io/lagden/koa-app-base.svg
