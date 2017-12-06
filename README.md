@@ -41,7 +41,7 @@ $ npm i -S koa-app-base
 const app = require('koa-app-base')
 
 const options = {
-  errorHandler: {
+  error: {
     emit: true
   }
 }
