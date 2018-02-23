@@ -34,6 +34,16 @@ Setup base para fazer um web server utilizando [Koa](https://github.com/koajs/ko
 $ npm i -S koa-app-base
 ```
 
+## Middleware
+
+Lista dos middleware instalados
+
+- [@tadashi/koa-error](https://github.com/lagden/koa-error)
+- [koa-compress](https://github.com/koajs/compress)
+- [kcors](https://github.com/koajs/cors)
+- [koa-conditional-get](https://github.com/koajs/conditional-get)
+- [koa-etag](https://github.com/koajs/etag)
+
 
 ## Usage
 
@@ -41,9 +51,7 @@ $ npm i -S koa-app-base
 const app = require('koa-app-base')
 
 const options = {
-  error: {
-    emit: true
-  }
+  error: true
 }
 
 app(options)
@@ -58,9 +66,9 @@ app(options)
 
 ## Options
 
-Veja as opções no próprio pacote
+Veja as opções no próprio middleware
 
-Parameter    | Package
+Parameter    | Middleware
 -----------  | --------------------
 error        | [@tadashi/koa-error](https://github.com/lagden/koa-error)
 compress     | [koa-compress](https://github.com/koajs/compress)
