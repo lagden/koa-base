@@ -44,7 +44,7 @@
     }
   },
   "dependencies": {
-    "@tadashi/koa-error": "3.0.0",
+    "@tadashi/koa-error": "4.0.0",
     "kcors": "2.2.1",
     "koa": "2.5.0",
     "koa-compress": "2.0.0",
