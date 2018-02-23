@@ -12,7 +12,7 @@ const errorHandler = require('@tadashi/koa-error')
 // Middleware options
 const _opts = Object.create(null)
 
-_opts.error = {emit: false}
+_opts.error = false
 _opts.compress = {
 	filter: contentType => /text|xml|json|javascript/ig.test(contentType),
 	threshold: 2048,
