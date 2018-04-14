@@ -14,7 +14,9 @@ const _opts = Object.create(null)
 
 _opts.error = false
 _opts.compress = {
-	filter: contentType => /text|xml|json|javascript/ig.test(contentType),
+	filter(contentType) {
+		return /text|xml|json|javascript/ig.test(contentType)
+	},
 	threshold: 2048,
 	flush: zlib.Z_SYNC_FLUSH
 }
