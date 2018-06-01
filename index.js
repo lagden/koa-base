@@ -11,7 +11,6 @@ const errorHandler = require('@tadashi/koa-error')
 
 // Middleware options
 const _opts = Object.create(null)
-
 _opts.error = false
 _opts.compress = {
 	filter(contentType) {
@@ -27,8 +26,8 @@ function createApp(opts = {}) {
 	const app = new Koa()
 	app
 		.use(errorHandler(options.error))
-		.use(compress(options.compress))
 		.use(koaCors(options.cors))
+		.use(compress(options.compress))
 		.use(conditional())
 		.use(etag())
 

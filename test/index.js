@@ -3,7 +3,7 @@
 import test from 'ava'
 import request from 'supertest'
 import toPort from 'hash-to-port'
-import base from '../.'
+import base from '..'
 
 function getApp(opts) {
 	const koa = base(opts)
@@ -18,7 +18,7 @@ function getApp(opts) {
 	return app
 }
 
-test('ok - com opts', async t => {
+test('com opts', async t => {
 	const app = getApp({error: true})
 	const res = await app.get('/')
 	const {ok} = res.body
@@ -27,7 +27,7 @@ test('ok - com opts', async t => {
 	t.true(ok)
 })
 
-test('ok - sem opts', async t => {
+test('sem opts', async t => {
 	const app = getApp()
 	const res = await app.get('/')
 	const {ok} = res.body
