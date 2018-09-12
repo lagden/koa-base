@@ -5,7 +5,7 @@ import request from 'supertest'
 import toPort from 'hash-to-port'
 import base from '..'
 
-function getApp(opts) {
+function _base(opts) {
 	const koa = base(opts)
 		.use(ctx => {
 			ctx.body = {
@@ -19,7 +19,7 @@ function getApp(opts) {
 }
 
 test('com opts', async t => {
-	const app = getApp({error: true})
+	const app = _base({error: true})
 	const res = await app.get('/')
 	const {ok} = res.body
 
@@ -28,7 +28,7 @@ test('com opts', async t => {
 })
 
 test('sem opts', async t => {
-	const app = getApp()
+	const app = _base()
 	const res = await app.get('/')
 	const {ok} = res.body
 
