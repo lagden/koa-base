@@ -1,6 +1,6 @@
 {
   "name": "koa-app-base",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
@@ -14,12 +14,10 @@
   "scripts": {
     "report": "nyc report --reporter=text-lcov | coveralls",
     "pretest": "xo",
-    "test": "NODE_ENV=test ava",
-    "pretest-cov": "npm run pretest",
-    "test-cov": "NODE_ENV=test nyc ava"
+    "test": "ava"
   },
   "keywords": [
-    "koa2",
+    "koa",
     "web",
     "server",
     "base",
@@ -48,7 +46,7 @@
   "dependencies": {
     "@tadashi/koa-error": "5.0.0",
     "kcors": "2.2.2",
-    "koa": "2.5.3",
+    "koa": "2.6.1",
     "koa-compress": "3.0.0",
     "koa-conditional-get": "2.0.0",
     "koa-etag": "3.0.0",
@@ -57,7 +55,6 @@
   "devDependencies": {
     "ava": "0.25.0",
     "hash-to-port": "1.0.0",
-    "nyc": "13.0.1",
     "supertest": "3.3.0",
     "xo": "0.23.0"
   }
