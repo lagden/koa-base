@@ -1,6 +1,6 @@
 {
   "name": "koa-app-base",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
@@ -44,13 +44,12 @@
     }
   },
   "dependencies": {
-    "@tadashi/koa-error": "5.0.0",
+    "@tadashi/koa-error": "5.1.0",
     "kcors": "2.2.2",
     "koa": "2.6.1",
     "koa-compress": "3.0.0",
     "koa-conditional-get": "2.0.0",
-    "koa-etag": "3.0.0",
-    "lodash.merge": "4.6.1"
+    "koa-etag": "3.0.0"
   },
   "devDependencies": {
     "ava": "0.25.0",

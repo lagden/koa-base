@@ -1,6 +1,5 @@
 'use strict'
 
-const merge = require('lodash.merge')
 const Koa = require('koa')
 const compress = require('koa-compress')
 const cors = require('kcors')
@@ -10,11 +9,11 @@ const errorHandling = require('@tadashi/koa-error')
 
 const _opts = Object.create(null)
 _opts.error = false
-_opts.compress = {}
-_opts.cors = {}
+_opts.compress = Object.create(null)
+_opts.cors = Object.create(null)
 
-function createApp(opts = {}) {
-	const options = merge(_opts, opts)
+function createApp(opts = Object.create(null)) {
+	const options = {..._opts, ...opts}
 	const app = new Koa()
 	app
 		.use(errorHandling(options.error))
