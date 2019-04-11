@@ -2,7 +2,7 @@
 
 const Koa = require('koa')
 const compress = require('koa-compress')
-const cors = require('kcors')
+const cors = require('@koa/cors')
 const conditional = require('koa-conditional-get')
 const etag = require('koa-etag')
 const errorHandling = require('@tadashi/koa-error')
