@@ -1,6 +1,6 @@
 {
   "name": "koa-app-base",
-  "version": "3.7.0",
+  "version": "3.8.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@koa/cors": "3.0.0",
-    "@tadashi/koa-error": "6.0.0",
+    "@tadashi/koa-error": "7.0.0",
     "koa": "2.7.0",
     "koa-compress": "3.0.0",
     "koa-conditional-get": "2.0.0",
