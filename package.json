@@ -52,7 +52,7 @@
     "koa-etag": "3.0.0"
   },
   "devDependencies": {
-    "ava": "1.4.1",
+    "ava": "2.2.0",
     "hash-to-port": "1.0.0",
     "supertest": "4.0.2"
   }
