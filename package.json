@@ -1,5 +1,5 @@
 {
-  "name": "koa-app-base",
+  "name": "@tadashi/koa-base",
   "version": "3.9.0",
   "description": "A web server with sugar",
   "repository": {

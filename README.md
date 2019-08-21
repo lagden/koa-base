@@ -10,8 +10,8 @@
 [![Greenkeeper badge][greenkeeper-img]][greenkeeper]
 
 
-[npm-img]:         https://img.shields.io/npm/v/koa-app-base.svg
-[npm]:             https://www.npmjs.com/package/koa-app-base
+[npm-img]:         https://img.shields.io/npm/v/@tadashi/koa-base.svg
+[npm]:             https://www.npmjs.com/package/@tadashi/koa-base
 [ci-img]:          https://travis-ci.org/lagden/koa-app-base.svg
 [ci]:              https://travis-ci.org/lagden/koa-app-base
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/koa-app-base/badge.svg?branch=master
@@ -31,7 +31,7 @@ Setup base para fazer um web server utilizando [Koa](https://github.com/koajs/ko
 ## Install
 
 ```
-$ npm i -S koa-app-base
+$ npm i -S @tadashi/koa-base
 ```
 
 ## Middleware
@@ -48,7 +48,7 @@ Lista dos middleware instalados
 ## Usage
 
 ```js
-const app = require('koa-app-base')
+const app = require('@tadashi/koa-base')
 
 const options = {
   error: true
@@ -77,4 +77,4 @@ cors         | [kcors](https://github.com/koajs/cors)
 
 ## License
 
-MIT © [Thiago Lagden](http://lagden.in)
+MIT © [Thiago Lagden](https://lagden.in)
