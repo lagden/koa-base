@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/koa-base",
-  "version": "3.9.0",
+  "version": "3.9.1",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "report": "nyc report --reporter=text-lcov | coveralls",
-    "pretest": "npx xo",
+    "pretest": "xo",
     "test": "ava"
   },
   "keywords": [
@@ -46,14 +46,15 @@
   "dependencies": {
     "@koa/cors": "3.0.0",
     "@tadashi/koa-error": "7.0.1",
-    "koa": "2.8.1",
+    "koa": "2.8.2",
     "koa-compress": "3.0.0",
     "koa-conditional-get": "2.0.0",
     "koa-etag": "3.0.0"
   },
   "devDependencies": {
-    "ava": "2.3.0",
+    "ava": "2.4.0",
     "hash-to-port": "1.1.0",
-    "supertest": "4.0.2"
+    "supertest": "4.0.2",
+    "xo": "0.25.3"
   }
 }
