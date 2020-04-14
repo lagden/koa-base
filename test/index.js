@@ -1,9 +1,9 @@
 'use strict'
 
-import test from 'ava'
-import request from 'supertest'
-import toPort from 'hash-to-port'
-import base from '..'
+const test = require('ava')
+const request = require('supertest')
+const toPort = require('hash-to-port')
+const base = require('..')
 
 function _base(opts) {
 	const koa = base(opts)

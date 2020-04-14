@@ -40,7 +40,8 @@
           "properties": "never"
         }
       ],
-      "capitalized-comments": 0
+      "capitalized-comments": 0,
+      "unicorn/prevent-abbreviations": 0
     }
   },
   "dependencies": {
@@ -52,9 +53,9 @@
     "koa-etag": "3.0.0"
   },
   "devDependencies": {
-    "ava": "2.4.0",
+    "ava": "3.7.0",
     "hash-to-port": "1.1.0",
     "supertest": "4.0.2",
-    "xo": "0.25.3"
+    "xo": "0.29.1"
   }
 }
