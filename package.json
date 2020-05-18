@@ -45,7 +45,7 @@
     }
   },
   "dependencies": {
-    "@koa/cors": "3.0.0",
+    "@koa/cors": "3.1.0",
     "@tadashi/koa-error": "7.0.1",
     "koa": "2.11.0",
     "koa-compress": "3.0.0",
