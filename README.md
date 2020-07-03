@@ -26,7 +26,7 @@
 [greenkeeper]:     https://greenkeeper.io/
 
 
-Setup base para fazer um web server utilizando [Koa](https://github.com/koajs/koa)
+Basic setup with [Koa](https://github.com/koajs/koa)
 
 ## Install
 
@@ -36,11 +36,11 @@ $ npm i -S @tadashi/koa-base
 
 ## Middleware
 
-Lista dos middleware instalados
+Middleware list pre installed
 
 - [@tadashi/koa-error](https://github.com/lagden/koa-error)
+- [@koa/cors](https://github.com/koajs/cors)
 - [koa-compress](https://github.com/koajs/compress)
-- [kcors](https://github.com/koajs/cors)
 - [koa-conditional-get](https://github.com/koajs/conditional-get)
 - [koa-etag](https://github.com/koajs/etag)
 
@@ -54,7 +54,9 @@ const options = {
   error: true
 }
 
-app(options)
+const ignore = ['cors']
+
+app(options, ignore)
   .use(ctx => {
     ctx.throw(401)
   })
@@ -63,10 +65,31 @@ app(options)
   })
 ```
 
+## API
 
-## Options
+createApp( [opts] [, ignore ])
 
-Veja as opções no próprio middleware
+Name   | Type   | Default    | Description
+------ | ------ | ---------- | ------------
+opts   | object | See bellow | Middleware options
+ignore | array  | []         | Ignored middleware
+
+
+### opts
+
+#### Default
+
+```json
+{
+  "error": false,
+  "compress": {},
+  "cors": {}
+}
+```
+
+---
+
+See the options in the middleware itself
 
 Parameter    | Middleware
 -----------  | --------------------
