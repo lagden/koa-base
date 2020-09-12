@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/koa-base",
-  "version": "3.15.0",
+  "version": "3.16.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
@@ -49,14 +49,14 @@
     "@tadashi/koa-error": "7.0.1",
     "koa": "2.13.0",
     "koa-compress": "5.0.1",
-    "koa-conditional-get": "2.0.0",
-    "koa-etag": "3.0.0"
+    "koa-conditional-get": "3.0.0",
+    "koa-etag": "4.0.0"
   },
   "devDependencies": {
-    "ava": "3.10.1",
+    "ava": "3.12.1",
     "hash-to-port": "1.1.0",
     "nyc": "15.1.0",
     "supertest": "4.0.2",
-    "xo": "0.32.1"
+    "xo": "0.33.1"
   }
 }
