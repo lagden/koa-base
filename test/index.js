@@ -1,37 +1,50 @@
 'use strict'
 
 const test = require('ava')
-const request = require('supertest')
+const got = require('got')
+const hexID = require('@tadashi/hex-id')
 const toPort = require('hash-to-port')
 const base = require('..')
 
-function _base(opts) {
-	const koa = base(opts)
+function _base(opts, ignore) {
+	const port = toPort(hexID())
+	const baseUrl = `http://127.0.0.1:${port}`
+
+	const koa = Array.isArray(ignore) ? base(opts, ignore) : base(opts)
+	koa
 		.use(ctx => {
 			ctx.body = {
 				ok: true
 			}
 		})
 
-	const hash = (Number(String(Math.random()).split('.')[1]) + Date.now()).toString(26)
-	const app = request.agent(koa.listen(toPort(hash)))
-	return app
+	koa.listen(port)
+	return baseUrl
 }
 
 test('com opts', async t => {
-	const app = _base({error: true})
-	const res = await app.get('/')
-	const {ok} = res.body
+	const baseUrl = _base({error: true})
+	const res = await got.get(`${baseUrl}`)
+	const {ok} = JSON.parse(res.rawBody)
 
-	t.is(res.status, 200)
+	t.is(res.statusCode, 200)
 	t.true(ok)
 })
 
 test('sem opts', async t => {
-	const app = _base()
-	const res = await app.get('/')
-	const {ok} = res.body
+	const baseUrl = _base()
+	const res = await got.get(`${baseUrl}`)
+	const {ok} = JSON.parse(res.rawBody)
 
-	t.is(res.status, 200)
+	t.is(res.statusCode, 200)
+	t.true(ok)
+})
+
+test('com ignore', async t => {
+	const baseUrl = _base({}, ['compress'])
+	const res = await got.get(`${baseUrl}`)
+	const {ok} = JSON.parse(res.rawBody)
+
+	t.is(res.statusCode, 200)
 	t.true(ok)
 })

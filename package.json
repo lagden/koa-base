@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/koa-base",
-  "version": "3.16.0",
+  "version": "3.17.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   "author": "Thiago Lagden",
   "license": "MIT",
   "engines": {
-    "node": ">= 10.0.0"
+    "node": ">= 12.0.0"
   },
   "xo": {
     "envs": [
@@ -47,16 +47,17 @@
   "dependencies": {
     "@koa/cors": "3.1.0",
     "@tadashi/koa-error": "7.0.1",
-    "koa": "2.13.0",
+    "koa": "2.13.1",
     "koa-compress": "5.0.1",
     "koa-conditional-get": "3.0.0",
     "koa-etag": "4.0.0"
   },
   "devDependencies": {
-    "ava": "3.12.1",
-    "hash-to-port": "1.1.0",
+    "@tadashi/hex-id": "2.0.0",
+    "ava": "3.15.0",
+    "got": "11.8.1",
+    "hash-to-port": "1.2.0",
     "nyc": "15.1.0",
-    "supertest": "4.0.2",
-    "xo": "0.33.1"
+    "xo": "0.37.1"
   }
 }
