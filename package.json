@@ -12,7 +12,7 @@
     "README.md"
   ],
   "scripts": {
-    "coverage": "nyc --reporter=text-summary --reporter=lcov ava",
+    "coverage": "nyc --reporter=text --reporter=lcov ava",
     "pretest": "xo",
     "test": "ava"
   },
@@ -53,6 +53,9 @@
     "koa-compress": "5.0.1",
     "koa-conditional-get": "3.0.0",
     "koa-etag": "4.0.0"
+  },
+  "peerDependencies": {
+    "koa": ">= 2.0.0 < 3.0.0"
   },
   "devDependencies": {
     "@tadashi/hex-id": "2.0.0",
