@@ -3,8 +3,6 @@
 [![NPM version][npm-img]][npm]
 [![Build Status][ci-img]][ci]
 [![Coverage Status][coveralls-img]][coveralls]
-[![Dependency Status][dep-img]][dep]
-[![devDependency Status][devDep-img]][devDep]
 
 [![XO code style][xo-img]][xo]
 [![Greenkeeper badge][greenkeeper-img]][greenkeeper]
@@ -16,14 +14,8 @@
 [ci]:              https://github.com/lagden/koa-app-base/actions?query=workflow%3A%22Koa+Base+CI%22
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/koa-app-base/badge.svg?branch=master
 [coveralls]:       https://coveralls.io/github/lagden/koa-app-base?branch=master
-[dep-img]:         https://david-dm.org/lagden/koa-app-base/status.svg
-[dep]:             https://david-dm.org/lagden/koa-app-base
-[devDep-img]:      https://david-dm.org/lagden/koa-app-base/dev-status.svg
-[devDep]:          https://david-dm.org/lagden/koa-app-base?type=dev
 [xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:              https://github.com/sindresorhus/xo
-[greenkeeper-img]: https://badges.greenkeeper.io/lagden/koa-app-base.svg
-[greenkeeper]:     https://greenkeeper.io/
 
 
 Basic setup with [Koa](https://github.com/koajs/koa)
@@ -100,4 +92,4 @@ cors         | [kcors](https://github.com/koajs/cors)
 
 ## License
 
-MIT © [Thiago Lagden](https://lagden.in)
+MIT © [Thiago Lagden](https://github.com/lagden)
