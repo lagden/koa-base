@@ -45,7 +45,7 @@
     }
   },
   "peerDependencies": {
-    "koa": ">=2"
+    "koa": ">= 2.0.0 < 3.0.0"
   },
   "dependencies": {
     "@koa/cors": "3.1.0",
@@ -53,9 +53,6 @@
     "koa-compress": "5.0.1",
     "koa-conditional-get": "3.0.0",
     "koa-etag": "4.0.0"
-  },
-  "peerDependencies": {
-    "koa": ">= 2.0.0 < 3.0.0"
   },
   "devDependencies": {
     "@tadashi/hex-id": "2.0.0",
