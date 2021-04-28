@@ -1,4 +1,4 @@
-# Koa App Base
+# Koa Base
 
 [![NPM version][npm-img]][npm]
 [![Build Status][ci-img]][ci]
@@ -9,10 +9,10 @@
 
 [npm-img]:         https://img.shields.io/npm/v/@tadashi/koa-base.svg
 [npm]:             https://www.npmjs.com/package/@tadashi/koa-base
-[ci-img]:          https://github.com/lagden/koa-app-base/workflows/Koa%20Base%20CI/badge.svg
-[ci]:              https://github.com/lagden/koa-app-base/actions?query=workflow%3A%22Koa+Base+CI%22
-[coveralls-img]:   https://coveralls.io/repos/github/lagden/koa-app-base/badge.svg?branch=master
-[coveralls]:       https://coveralls.io/github/lagden/koa-app-base?branch=master
+[ci-img]:          https://github.com/lagden/koa-base/workflows/Koa%20Base%20CI/badge.svg
+[ci]:              https://github.com/lagden/koa-base/actions?query=workflow%3A%22Koa+Base+CI%22
+[coveralls-img]:   https://coveralls.io/repos/github/lagden/koa-base/badge.svg?branch=master
+[coveralls]:       https://coveralls.io/github/lagden/koa-base?branch=master
 [xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:              https://github.com/sindresorhus/xo
 
