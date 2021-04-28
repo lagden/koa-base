@@ -25,26 +25,23 @@ function _base(opts, ignore) {
 test('com opts', async t => {
 	const baseUrl = _base({error: true})
 	const res = await got.get(`${baseUrl}`)
-	const {ok} = JSON.parse(res.rawBody)
 
 	t.is(res.statusCode, 200)
-	t.true(ok)
+	t.snapshot(JSON.parse(res.body))
 })
 
 test('sem opts', async t => {
 	const baseUrl = _base()
 	const res = await got.get(`${baseUrl}`)
-	const {ok} = JSON.parse(res.rawBody)
 
 	t.is(res.statusCode, 200)
-	t.true(ok)
+	t.snapshot(JSON.parse(res.rawBody))
 })
 
 test('com ignore', async t => {
 	const baseUrl = _base({}, ['compress'])
 	const res = await got.get(`${baseUrl}`)
-	const {ok} = JSON.parse(res.rawBody)
 
 	t.is(res.statusCode, 200)
-	t.true(ok)
+	t.snapshot(JSON.parse(res.rawBody))
 })
