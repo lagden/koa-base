@@ -1,10 +1,8 @@
-'use strict'
-
-const test = require('ava')
-const got = require('got')
-const hexID = require('@tadashi/hex-id')
-const toPort = require('hash-to-port')
-const base = require('..')
+import test from 'ava'
+import got from 'got'
+import hexID from '@tadashi/hex-id'
+import toPort from 'hash-to-port'
+import base from '../src/base.js'
 
 function _base(opts, ignore) {
 	const port = toPort(hexID())
@@ -14,7 +12,7 @@ function _base(opts, ignore) {
 	koa
 		.use(ctx => {
 			ctx.body = {
-				ok: true
+				ok: true,
 			}
 		})
 

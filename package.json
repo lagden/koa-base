@@ -1,18 +1,19 @@
 {
   "name": "@tadashi/koa-base",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lagden/koa-app-base.git"
   },
-  "main": "index.js",
+  "type": "module",
+  "main": "src/base.js",
   "files": [
+    "src",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
-    "pretest": "xo",
     "test": "c8 --reporter=text --reporter=lcov ava"
   },
   "keywords": [
@@ -56,10 +57,9 @@
   "devDependencies": {
     "@tadashi/hex-id": "2.0.0",
     "ava": "3.15.0",
-    "c8": "7.7.1",
+    "c8": "7.8.0",
     "got": "11.8.2",
     "hash-to-port": "1.2.0",
-    "koa": "2.13.1",
-    "xo": "0.39.1"
+    "koa": "2.13.1"
   }
 }
