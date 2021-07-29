@@ -4,8 +4,6 @@
 [![Build Status][ci-img]][ci]
 [![Coverage Status][coveralls-img]][coveralls]
 
-[![XO code style][xo-img]][xo]
-
 
 [npm-img]:         https://img.shields.io/npm/v/@tadashi/koa-base.svg
 [npm]:             https://www.npmjs.com/package/@tadashi/koa-base
@@ -13,8 +11,6 @@
 [ci]:              https://github.com/lagden/koa-base/actions?query=workflow%3A%22Koa+Base+CI%22
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/koa-base/badge.svg?branch=master
 [coveralls]:       https://coveralls.io/github/lagden/koa-base?branch=master
-[xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
-[xo]:              https://github.com/sindresorhus/xo
 
 
 Basic setup with [Koa](https://github.com/koajs/koa)
@@ -39,7 +35,7 @@ Middleware list pre installed
 ## Usage
 
 ```js
-const app = require('@tadashi/koa-base')
+import app from '@tadashi/koa-base'
 
 const options = {
   error: true
