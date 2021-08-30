@@ -7,8 +7,8 @@
 
 [npm-img]:         https://img.shields.io/npm/v/@tadashi/koa-base.svg
 [npm]:             https://www.npmjs.com/package/@tadashi/koa-base
-[ci-img]:          https://github.com/lagden/koa-base/workflows/Koa%20Base%20CI/badge.svg
-[ci]:              https://github.com/lagden/koa-base/actions?query=workflow%3A%22Koa+Base+CI%22
+[ci-img]:          https://github.com/lagden/koa-base/actions/workflows/nodejs.yml/badge.svg
+[ci]:              https://github.com/lagden/koa-base/actions/workflows/nodejs.yml
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/koa-base/badge.svg?branch=master
 [coveralls]:       https://coveralls.io/github/lagden/koa-base?branch=master
 
