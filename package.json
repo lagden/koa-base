@@ -51,7 +51,7 @@
     "eslint-plugin-unicorn": "36.0.0",
     "got": "11.8.2",
     "hash-to-port": "1.2.0",
-    "koa": "2.13.3"
+    "koa": "2.13.4"
   },
   "babel": {},
   "ava": {
