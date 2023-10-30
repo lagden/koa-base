@@ -1,13 +1,14 @@
 {
   "name": "@tadashi/koa-base",
-  "version": "5.1.2",
+  "version": "5.2.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lagden/koa-app-base.git"
   },
   "type": "module",
-  "main": "src/base.js",
+  "exports": "./src/base.js",
+  "main": "./src/base.js",
   "files": [
     "src",
     "LICENSE",
@@ -36,19 +37,19 @@
   "dependencies": {
     "@koa/cors": "4.0.0",
     "@tadashi/koa-error": "9.0.0",
-    "koa-compress": "5.1.0",
+    "koa-compress": "5.1.1",
     "koa-conditional-get": "3.0.0",
     "koa-etag": "4.0.0"
   },
   "devDependencies": {
-    "@tadashi/hex-id": "2.0.0",
-    "ava": "5.0.1",
-    "c8": "7.12.0",
-    "eslint": "8.26.0",
-    "eslint-config-xo": "0.42.0",
-    "eslint-plugin-unicorn": "44.0.2",
-    "got": "12.5.2",
+    "@tadashi/hex-id": "3.0.2",
+    "ava": "5.3.1",
+    "c8": "8.0.1",
+    "eslint": "8.52.0",
+    "eslint-config-xo": "0.43.1",
+    "eslint-plugin-unicorn": "49.0.0",
+    "got": "13.0.0",
     "hash-to-port": "1.2.0",
-    "koa": "2.13.4"
+    "koa": "2.14.2"
   }
 }

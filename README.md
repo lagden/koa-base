@@ -18,7 +18,7 @@ Basic setup with [Koa](https://github.com/koajs/koa)
 ## Install
 
 ```
-$ npm i -S @tadashi/koa-base
+$ npm i @tadashi/koa-base
 ```
 
 ## Middleware
