@@ -15,9 +15,9 @@
     "README.md"
   ],
   "scripts": {
-    "eslint": "eslint --config .eslintrc.yml --ext .js --ignore-path .gitignore .",
+    "eslint": "eslint --ignore-path .gitignore .",
     "pretest": "npm run eslint",
-    "test": "c8 --reporter=text --reporter=text-summary --reporter=lcov ava --tap"
+    "test": "c8 --reporter=text --reporter=text-summary --reporter=lcovonly --reporter=cobertura ava"
   },
   "keywords": [
     "koa",
@@ -29,7 +29,7 @@
   "author": "Thiago Lagden",
   "license": "MIT",
   "engines": {
-    "node": ">= 14.16.0"
+    "node": ">= 18"
   },
   "peerDependencies": {
     "koa": ">= 2.0.0 < 3.0.0"
