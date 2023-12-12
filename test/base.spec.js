@@ -16,30 +16,39 @@ function _base(opts, ignore) {
 			}
 		})
 
-	koa.listen(port)
-	return baseUrl
+	const server = koa.listen(port)
+	return {baseUrl, server}
 }
 
 test('com opts', async t => {
-	const baseUrl = _base({error: true})
+	const {baseUrl, server} = _base({error: true})
 	const res = await got.get(`${baseUrl}`)
 
 	t.is(res.statusCode, 200)
 	t.snapshot(JSON.parse(res.body))
+
+	// server.close.bind(server)()
+	server.close()
 })
 
 test('sem opts', async t => {
-	const baseUrl = _base()
+	const {baseUrl, server} = _base()
 	const res = await got.get(`${baseUrl}`)
 
 	t.is(res.statusCode, 200)
 	t.snapshot(JSON.parse(res.rawBody))
+
+	// server.close.bind(server)()
+	server.close()
 })
 
 test('com ignore', async t => {
-	const baseUrl = _base({}, ['compress'])
+	const {baseUrl, server} = _base({}, ['compress'])
 	const res = await got.get(`${baseUrl}`)
 
 	t.is(res.statusCode, 200)
 	t.snapshot(JSON.parse(res.rawBody))
+
+	// server.close.bind(server)()
+	server.close()
 })
