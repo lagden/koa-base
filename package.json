@@ -35,7 +35,7 @@
     "koa": ">= 2.0.0 < 3.0.0"
   },
   "dependencies": {
-    "@koa/cors": "4.0.0",
+    "@koa/cors": "5.0.0",
     "@tadashi/koa-error": "9.0.0",
     "koa-compress": "5.1.1",
     "koa-conditional-get": "3.0.0",
