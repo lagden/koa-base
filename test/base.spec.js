@@ -9,12 +9,11 @@ function _base(opts, ignore) {
 	const baseUrl = `http://127.0.0.1:${port}`
 
 	const koa = Array.isArray(ignore) ? base(opts, ignore) : base(opts)
-	koa
-		.use(ctx => {
-			ctx.body = {
-				ok: true,
-			}
-		})
+	koa.use(ctx => {
+		ctx.body = {
+			ok: true,
+		}
+	})
 
 	const server = koa.listen(port)
 	return {baseUrl, server}
