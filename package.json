@@ -8,7 +8,7 @@
   },
   "type": "module",
   "exports": "./src/base.js",
-  "main": "./src/base.js",
+  "main": "src/base.js",
   "files": [
     "src",
     "LICENSE",
