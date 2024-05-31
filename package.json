@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/koa-base",
-  "version": "5.3.0",
+  "version": "5.4.0",
   "description": "A web server with sugar",
   "repository": {
     "type": "git",
